@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+:root {
+  --height: 0px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  background-color: #fff;
+}
+.box {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+  width: 60px;
+  height: 400px;
+  border-radius: 50px;
+  gap: 40px;
+  box-shadow: 3px 1px 2px #111 inset, -2px -2px 0px #444 inset;
+}
+.box-value {
+  color: white;
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.rang {
+  flex-grow: 1;
+  width: 4px;
+  background-color: #222;
+  position: relative;
+  border-radius: 15px;
+  box-shadow: 2px 2px 0px #111 inset;
+}
+.rang span {
+  background-color: #ff7f00;
+  box-shadow: 0px 0px 10px #ff4500, inset 1px 1px 2px #dd4500;
+  position: absolute;
+  bottom: 0;
+  height: var(--height);
+  width: inherit;
+  border-radius: 15px;
+}
+.btn {
+  display: block;
+  margin-bottom: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: none;
+  font-size: 1.5em;
+  background-color: #444;
+  color: #fff;
+  box-shadow: 1px 0px 3px #555 inset, 3px 3px 5px #111;
+}
+.btn:active {
+  box-shadow: 1px 0px 3px #555, 3px 3px 5px #111 inset;
+}
